@@ -11,7 +11,6 @@ if (!user) {
     cookie.set('user', user);
   }
 }
-
 var socket = io();
 
 // The user count. Can change when someone joins/leaves
