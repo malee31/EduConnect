@@ -11,14 +11,6 @@ if (!user) {
     cookie.set('user', user);
   }
 }
-function anonymous(){
-  if ($(anonymous).checked == true){
-    user = "anonymous";
-  }
-  if ($(anonymous).checked == false){
-    user = cookie.get('user');
-  }
-}
 var socket = io();
 
 // The user count. Can change when someone joins/leaves

@@ -1,16 +1,41 @@
 /* ./public/style.css */
+header {
+  display: flex;
+  width: 100vh;
+  height: 10vh;
+  margin: 0;
+  padding: 0;
+  align-content: flex-start;
+  background-color: yellow;
+}
+
+.chat {
+  content: '';
+  width: 100%;
+  height: calc(100vh - 165px);
+  background: white;
+  padding: 5px 10px;
+  overflow: scroll;
+}
+
+body {
+  background: #eee;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
 * {
   box-sizing: border-box;
   transition: all .3s ease;
 }
 
-html, body {
-  background: #eee;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
+
 
 h1, .user-count {
   margin: 0;
@@ -22,14 +47,7 @@ h1, .user-count {
   float: right;
 }
 
-.chat {
-  content: '';
-  width: 100%;
-  height: calc(100vh - 165px);
-  background: white;
-  padding: 5px 10px;
-  overflow: scroll;
-}
+
 
 .chat p {
   margin: 0 0 5px 0;
