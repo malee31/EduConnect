@@ -1,20 +1,6 @@
 // ./public/javascript.js
 
 var container=document.getElementsByClassName("chat")[0];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Get the current username from the cookies
 var user = cookie.get('user');
 if (!user) {
@@ -28,7 +14,9 @@ if (!user) {
     cookie.set('user', user);
   }
 }
-
+if ($(anonymous).checked == true){
+  user = "anonymous";
+}
 var socket = io();
 
 // The user count. Can change when someone joins/leaves
