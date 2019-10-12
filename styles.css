@@ -1,7 +1,19 @@
 body{
-	background-color: #DDD;
+	background-color: grey;
 }
 
-p{
-	color: grey;
+#navbar{
+	height: 10vh;
+}
+
+#content{
+	width: 100vw;
+	height: auto;
+	margin: 20px 25px;
+	padding: 0px;	
+}
+
+#defaultview{
+	width: 100vw;
+	height 90vh;
 }
