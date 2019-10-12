@@ -1,16 +1,6 @@
 // ./public/javascript.js
 
 var container=document.getElementsByClassName("chat")[0];
-container.scrollTop = container.scrollHeight;
-firstTime = false;
-if (container.scrollTop + container.clientHeight === container.scrollHeight) 
-{
-  container.scrollTop = container.scrollHeight;
-}
-
-
-
-
 
 
 
@@ -50,6 +40,7 @@ socket.on('count', function (data) {
 // it will be like { user: 'username', message: 'text' }
 socket.on('message', function (data) {
   $('.chat').append('<p><strong>' + data.user + '</strong>: ' + data.message + '</p>');
+  container.scrollTop = container.scrollHeight;
 });
 
 // When the form is submitted
