@@ -1,5 +1,30 @@
 // ./public/javascript.js
 
+var container=document.getElementsByClassName("chat")[0];
+container.scrollTop = container.scrollHeight;
+firstTime = false;
+if (container.scrollTop + container.clientHeight === container.scrollHeight) 
+{
+  container.scrollTop = container.scrollHeight;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Get the current username from the cookies
 var user = cookie.get('user');
 if (!user) {
