@@ -12,13 +12,6 @@ html, body {
   padding: 0;
 }
 
-main {
-  width: calc(100% - 20px);
-  max-width: 500px;
-  margin: 0 auto;
-  font-family: Helvetica, Arial, Sans, sans-serif;
-}
-
 h1, .user-count {
   margin: 0;
   padding: 10px 0;

@@ -8,22 +8,22 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-
-   <main>
-  <header>
+    <header>
+      <h1>EduConnect</h1>
+      <input type="checkbox" value= "Anonymous" id="anonymous" onclick={"alert('Not functioning yet lmao');"}>
+      </input>
+      <p id="name">
+         My name is Jeff
+      </p>
+    </header>
     <div class="user-count">0</div>
-    <h1>Chatty Chat</h1>
-  </header>
+      <section class="chat">
+      </section>
 
-  <section class="chat">
-  </section>
-
-  <form>
-    <input type="text" placeholder="Type here" />
-    <button>Send</button>
-  </form>
-</main>
-
+      <form>
+        <input type="text" placeholder="Type here" />
+        <button>Send</button>
+      </form>
     <!-- Include jquery, cookies, socket.io (client-side) and your own code -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://unpkg.com/cookie_js@1.2.2/cookie.min.js"></script>

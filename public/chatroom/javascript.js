@@ -1,10 +1,7 @@
-// ./public/javascript.js
-
 var container=document.getElementsByClassName("chat")[0];
 // Get the current username from the cookies
 var user = cookie.get('user');
 if (!user) {
-
   // Ask for the username if there is none set already
   user = prompt('Choose a username:');
   if (!user) {
