@@ -6,6 +6,7 @@ if (!user) {
   user = prompt('Choose a username:');
   if (!user) {
     alert('We cannot work with you like that!');
+    user="Default";
   } else {
     // Store it in the cookies for future use
     cookie.set('user', user);
@@ -46,7 +47,7 @@ $('form').submit(function (e) {
 
   // Send the message to the server
   socket.emit('message', {
-    user: cookie.get('user') || 'Anonymous',
+    user: user,
     message: message
   });
 
