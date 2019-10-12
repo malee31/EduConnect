@@ -14,9 +14,9 @@ if (!user) {
 
 document.getElementById("anonymous").onclick=function(){
   if(document.getElementById("anonymous").checked){
-    user = "anonymous";
+    user = "Anonymous";
   }
-  else(document.getElementById("anonymous").checked == false){
+  else{
     user = cookie.get('user');
   }
 }
