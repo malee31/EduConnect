@@ -11,8 +11,13 @@ if (!user) {
     cookie.set('user', user);
   }
 }
-if ($(anonymous).checked == true){
-  user = "anonymous";
+function anonymous(){
+  if ($(anonymous).checked == true){
+    user = "anonymous";
+  }
+  if ($(anonymous).checked == false){
+    user = cookie.get('user');
+  }
 }
 var socket = io();
 
