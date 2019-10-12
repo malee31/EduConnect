@@ -17,3 +17,8 @@ body{
 	width: 100vw;
 	height 90vh;
 }
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
