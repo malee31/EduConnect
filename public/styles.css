@@ -1,5 +1,6 @@
 body{
-	background-color: /* cgp*/grey;
+	background-image: url("http://www.mmc.edu/education/som/academicdepartments/basicsciences/profmedicaleducation/profess-med-photos.jpg");
+	background-size: cover;
 }
 
 #navbar{
