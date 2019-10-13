@@ -11,9 +11,9 @@
     <header>
       <h1>EduConnect</h1>
       <div id="anon">
-        <label for="anonymous">Post as anonymous</label>
-         <input type="checkbox" id="anonymous">
-         </input>
+        <label for="anonymous" id="anontxt">Post as anonymous</label>
+        <input type="checkbox" id="anonymous">
+        </input>
       </div>
       <div id="corner">
          <p id="name">
@@ -58,7 +58,6 @@
               cookie.remove("user");
               window.location='../index.html';
           }
-          
 </script>
 <script type="text/javascript">
           document.getElementById("name").innerHTML = "Signed in as: " + cookie.get('user');

@@ -8,10 +8,18 @@ div{
   display: flex;
   flex-direction: row;
   padding: auto 0;
+  align-items: center;
+}
+
+#anontxt{
+  margin: 0;
+  padding: 0;
 }
 
 #anonymous{
   width: fit-content;
+  padding: 0;
+  margin: 0;
 }
 
 #type{
