@@ -29,8 +29,11 @@ socket.on('count', function (data) {
 
 // When we receive a message
 // it will be like { user: 'username', message: 'text' }
+function encodeHTML(s) {
+    return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+}
 socket.on('message', function (data) {
-  $('.chat').append('<p><strong>' + data.user + '</strong>: ' + data.message + '</p>');
+  $('.chat').append('<p><strong>' + data.user + '</strong>: ' + encodeHTML(data.message) + '</p>');
   container.scrollTop = container.scrollHeight;
 });
 
