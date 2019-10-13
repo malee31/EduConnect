@@ -33,12 +33,12 @@ div{
 header {
   display: flex;
   width: 100vw;
-  height: auto;
+  height: 100px;
   margin: 0;
   padding: 10px 20px;
   align-content: flex-start;
   flex-direction: row;
-  background-color: #888;
+  background-color: #2674f0;
   justify-content: space-between;
 }
 
@@ -46,7 +46,7 @@ header {
   display: flex;
   flex-direction: row;
   width: 100vw;
-  height: 90vh;
+  height: calc(100vh-100px);
   align-content: flex-start;
 }
 
@@ -54,24 +54,25 @@ header {
   display: flex;
   flex-direction: column;
   float: left;
-  height: 90vh;
-  width: 10vw;
+  height: calc(100vh - 100px);
+  width: 20vw;
+  background-color: #AAA
 }
 
 .chat {
   content: '';
   box-sizing: border-box;
-  width: 90vw;
-  height: 90vh;
-  background-color: #AAA;
+  width: 80vw;
+  height: calc(90vh - 100px);
+  background-color: #EEE;
   padding: 5px 10px;
   overflow: scroll;
 }
 
-body {
+html, body {
   background: #eee;
   width: 100vw;
-  height: 100vh;
+  height: auto;
   margin: 0;
   padding: 0;
   display: flex;
@@ -82,7 +83,7 @@ body {
 form{
   display: flex;
   flex-direction: row;
-  height: auto;
+  height: 10vh;
   padding: 0;
   margin: 0;
 }
