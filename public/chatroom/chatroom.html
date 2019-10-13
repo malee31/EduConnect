@@ -23,7 +23,15 @@
          <p id="name">
             Name
          </p>
-         <a id ="link" onclick="function(){cookie.remove('name');}" href="../index.html">Sign out</a>
+         <a id ="link" href="../index.html">Sign out</a>
+         <script type="text/javascript">
+        window.onload = function() {
+          var a = document.getElementById("link");
+          a.onclick = function() {
+            cookie.remove('name');
+          }
+        }
+    </script>
       </div>
    </header>
    <div class="user-count">0</div>
