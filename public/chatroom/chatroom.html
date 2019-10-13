@@ -20,7 +20,7 @@
             Name
          </p>
          
-         <button id ="link" onclick="visitPage();">Sign out</button>
+         <button id ="link" onclick="visitPage();">Back</button>
          
       </div>
    </header>
@@ -58,6 +58,10 @@
               cookie.remove("user");
               window.location='../index.html';
           }
-          </script>
+          
+</script>
+<script type="text/javascript">
+          document.getElementById("name").value = "Signed in as: " + cookie.get('user');
+</script>
   </body>
 </html>
