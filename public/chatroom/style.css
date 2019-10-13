@@ -1,7 +1,29 @@
-/* ./public/style.css */
+html, body {
+  background: #eee;
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
 div{
   margin: 0;
   padding: 0;
+}
+
+header {
+  display: flex;
+  width: 100vw;
+  height: 100px;
+  margin: 0;
+  padding: 10px 20px;
+  align-content: flex-start;
+  flex-direction: row;
+  background-color: #2674f0;
+  justify-content: space-between;
 }
 
 #anon{
@@ -22,24 +44,13 @@ div{
   margin: 0;
 }
 
-#type{
-  width: 80%;
-}
-
-#sent{
-  width: 20%;
-}
-
-header {
+#sidebar{
   display: flex;
-  width: 100vw;
-  height: 100px;
-  margin: 0;
-  padding: 10px 20px;
-  align-content: flex-start;
-  flex-direction: row;
-  background-color: #2674f0;
-  justify-content: space-between;
+  flex-direction: column;
+  float: left;
+  height: calc(100vh - 100px);
+  width: 20vw;
+  background-color: #AAA
 }
 
 #content{
@@ -50,15 +61,6 @@ header {
   align-content: flex-start;
 }
 
-#sidebar{
-  display: flex;
-  flex-direction: column;
-  float: left;
-  height: calc(100vh - 100px);
-  width: 20vw;
-  background-color: #AAA
-}
-
 .chat {
   content: '';
   box-sizing: border-box;
@@ -67,17 +69,6 @@ header {
   background-color: #EEE;
   padding: 5px 10px;
   overflow: scroll;
-}
-
-html, body {
-  background: #eee;
-  width: 100vw;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
 }
 
 form{
@@ -92,6 +83,15 @@ form{
   height: fit-content;
 }
 
+#type{
+  width: 80%;
+}
+
+#sent{
+  width: 20%;
+}
+
+
 
 
 
@@ -105,8 +105,6 @@ form{
   transition: all .3s ease;
 }
 
-
-
 h1, .user-count {
   margin: 0;
   padding: 10px 0;
@@ -117,8 +115,6 @@ h1, .user-count {
   float: right;
   flex-direction: column;
 }
-
-
 
 .chat p {
   margin: 0 0 5px 0;
