@@ -1,5 +1,9 @@
 <!-- ./public/index.html -->
 <!DOCTYPE html>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://unpkg.com/cookie_js@1.2.2/cookie.min.js"></script>
+<script src="https://unpkg.com/socket.io-client@2/dist/socket.io.slim.js"></script>
+<script src="javascript.js"></script>
 <html>
   <head>
     <title>EduConnect|Chatroom</title>
@@ -19,9 +23,7 @@
          <p id="name">
             Name
          </p>
-         <p id="link">
-            Sign out
-         </p>
+         <a id ="link" onclick="cookie.remove('name');" href="../index.html">Sign out</a>
       </div>
    </header>
    <div class="user-count">0</div>
@@ -34,9 +36,6 @@
       </form>
    </div>
     <!-- Include jquery, cookies, socket.io (client-side) and your own code -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://unpkg.com/cookie_js@1.2.2/cookie.min.js"></script>
-    <script src="https://unpkg.com/socket.io-client@2/dist/socket.io.slim.js"></script>
-    <script src="javascript.js"></script>
+    
   </body>
 </html>
