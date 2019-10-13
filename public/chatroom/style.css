@@ -1,12 +1,24 @@
 /* ./public/style.css */
+div{
+  margin: 0;
+  padding: 0;
+}
+
+#anon{
+  display: flex;
+  flex-direction: column;
+}
+
 header {
   display: flex;
-  width: 100vh;
-  height: 10vh;
+  width: 100vw;
+  height: auto;
   margin: 0;
   padding: 0;
   align-content: flex-start;
-  background-color: yellow;
+  flex-direction: row;
+  background-color: #888;
+  justify-content: space-between;
 }
 
 .chat {
@@ -30,7 +42,7 @@ body {
 
 
 
-* {
+/** {
   box-sizing: border-box;
   transition: all .3s ease;
 }
@@ -79,3 +91,4 @@ button:hover {
     width: 150px;
   }
 }
+*/
