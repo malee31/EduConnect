@@ -23,15 +23,14 @@
          <p id="name">
             Name
          </p>
-         <a id ="link" href="../index.html">Sign out</a>
          <script type="text/javascript">
-        window.onload = function() {
-          var a = document.getElementById("link");
-          a.onclick = function() {
-            cookie.remove('name');
+          function visitPage(){
+              cookie.remove("user");
+              window.location='../index.html';
           }
-        }
-    </script>
+          </script>
+         <button id ="link" onclick="visitPage();">Sign out</button>
+         
       </div>
    </header>
    <div id="content">
