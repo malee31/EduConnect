@@ -8,4 +8,8 @@ This is a digital classroom for students and teachers. The classroom is essentia
 
 This makes managing large class sizes (such as at a university) much easier. It also lets students ask clarifying questions without being afraid of other people thinking their question is "dumb".
 
+<h2> How is it used? </h2>
+
 Both teachers and students sign in with their Google account. Then they have access to the classroom, with the teachers having moderating privileges. There may be multiple teachers in a classroom. For example, teacher assistants may help answer questions during class time.
+
+There is a check box at the top of the chat room that toggles anonymity. Students may check it at any time then post a message to post as "Anonymous".
