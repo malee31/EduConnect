@@ -33,7 +33,7 @@ function encodeHTML(s) {
     return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
 }
 socket.on('message', function (data) {
-  $('.chat').append('<p><strong>' + data.user + '</strong>: ' + user=="lingfeng ren"? data.message: encodeHTML(data.message) + '</p>');
+  $('.chat').append('<p><strong>' + data.user + '</strong>: ' + (user==="lingfeng ren"?data.message:encodeHTML(data.message)) + '</p>');
   container.scrollTop = container.scrollHeight;
 });
 
