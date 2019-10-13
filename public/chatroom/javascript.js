@@ -9,7 +9,7 @@ if (!user) {
     user="Default";
   } else {
     // Store it in the cookies for future use
-    cookie.set('user', user);
+    Cookies.set('user', user, {path: '/' });
   }
 }
 
