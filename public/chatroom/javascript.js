@@ -3,15 +3,12 @@ var container=document.getElementsByClassName("chat")[0];
 var user = cookie.get('user');
 if (!user) {
   // Ask for the username if there is none set already
-  user = prompt('Choose a username:');
-  if (!user) {
-    alert('We cannot work with you like that!');
-    user="Default";
+    alert('Please login with Google');
   } else {
     // Store it in the cookies for future use
     cookie.set('user', user, {path: '/' });
   }
-}
+
 
 document.getElementById("anonymous").onclick=function(){
   if(document.getElementById("anonymous").checked){
