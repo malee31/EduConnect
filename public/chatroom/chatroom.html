@@ -19,15 +19,9 @@
          <p id="name">
             Name
          </p>
-         <a id ="link" href="../index.html">Sign out</a>
-         <script type="text/javascript">
-        window.onload = function() {
-          var a = document.getElementById("link");
-          a.onclick = function() {
-            cookie.remove('name');
-          }
-        }
-    </script>
+         
+         <button id ="link" onclick="visitPage();">Back</button>
+         
       </div>
    </header>
    <div id="content">
@@ -54,11 +48,19 @@
       </div>
     </div>
 
-
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://unpkg.com/cookie_js@1.2.2/cookie.min.js"></script>
+<script src="https://unpkg.com/socket.io-client@2/dist/socket.io.slim.js"></script>
+<script src="javascript.js"></script>
     <!-- Include jquery, cookies, socket.io (client-side) and your own code -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://unpkg.com/cookie_js@1.2.2/cookie.min.js"></script>
-  <script src="https://unpkg.com/socket.io-client@2/dist/socket.io.slim.js"></script>
-  <script src="javascript.js"></script>
+<script type="text/javascript">
+          function visitPage(){
+              cookie.remove("user");
+              window.location='../index.html';
+          }
+</script>
+<script type="text/javascript">
+          document.getElementById("name").value = "Signed in as: " + cookie.get('user');
+</script>
   </body>
 </html>
