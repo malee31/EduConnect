@@ -28,7 +28,8 @@ body{
 	width: calc(50vw - 25px);
 	height: auto;
 	margin: 20px 25px;
-	padding: 0px;	
+	padding: 0px;
+	font-size: 20px;
 }
 
 #defaultview{
