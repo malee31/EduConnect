@@ -8,9 +8,19 @@ body{
 }
 
 #classroomlink{
-	float: right;
+	
+}
+
+#topper{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100vw;
+	height: auto;
 	font-size: 28px;
 	background-color: white;
+	vertical-align: middle;
+	padding: auto 10px;
 }
 
 #content{
