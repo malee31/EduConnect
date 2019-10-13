@@ -14,15 +14,18 @@ div{
   margin: 0;
   padding: 0;
 }
+
 #teacher{
   font-size: 20px;
   padding: 10%;
 }
+
 #student{
   font-size: 20px;
   padding: 10%;
   margin-bottom:0%;
 }
+
 #students {
   display: block;
   margin-block-start: 0em;
@@ -43,6 +46,15 @@ header {
   flex-direction: row;
   background-color: #2674f0;
   justify-content: space-between;
+}
+
+header p, header label, header h1{
+  color: white;
+}
+
+img{
+  width: 80px;
+  height: 80px;
 }
 
 #anon{
@@ -74,9 +86,11 @@ header {
   padding: 0;
   margin: 0;
 }
+
 #anontxt{
-margin-right: 10px;
+  margin-right: 10px;
 }
+
 #link{
   border-radius: 5px;
   padding: 0;
