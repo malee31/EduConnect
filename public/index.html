@@ -21,7 +21,7 @@
   // Alternative is redirect
   OAuth.popup('google').then(google => {
     console.log(google);
-    result.me().done(function(data) {
+    google.me().done(function(data) {
     console.log(data.name);
 })
 	});
