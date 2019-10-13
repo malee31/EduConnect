@@ -4,8 +4,11 @@ body{
 	color: black;
 }
 
-#navbar{
-	height: 10vh;
+#google-button{
+	float: right;
+	width: 20%;
+	border-radius: 0px;
+	border-bottom-left-radius: 10px;
 }
 
 #topper{
@@ -22,7 +25,12 @@ body{
 }
 
 #classroomlink {
+	border-radius: 10px;
 	font-size: 25px;
+}
+
+#classroomlink a:hover{
+	text-decoration: none;
 }
 
 #content{
