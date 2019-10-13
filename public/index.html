@@ -22,7 +22,7 @@
   	OAuth.popup('google').then(google => {
 	    console.log(google);
 	    google.me().done(function(data) {
-	    	console.log(data);
+	    	console.log(data.raw.names[0].displayName);
 	    	console.log(data.name);
 		})
 	});
