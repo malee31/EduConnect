@@ -6,7 +6,12 @@ div{
 
 #anon{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  padding: auto 0;
+}
+
+#anonymous{
+  width: fit-content;
 }
 
 header {
@@ -14,7 +19,7 @@ header {
   width: 100vw;
   height: auto;
   margin: 0;
-  padding: 0;
+  padding: 10px 20px;
   align-content: flex-start;
   flex-direction: row;
   background-color: #888;
@@ -23,9 +28,10 @@ header {
 
 .chat {
   content: '';
-  width: 100%;
-  height: calc(100vh - 165px);
-  background: white;
+  box-sizing: border-box;
+  width: auto;
+  height: 90vh;
+  background-color: #AAA;
   padding: 5px 10px;
   overflow: scroll;
 }
@@ -38,11 +44,30 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  align-content: center;
+}
+
+form{
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.input{
+  height: fit-content;
 }
 
 
 
-/** {
+
+
+
+
+
+
+* {
   box-sizing: border-box;
   transition: all .3s ease;
 }
@@ -83,7 +108,7 @@ button:hover {
   cursor: pointer;
   background: #ddd;
 }
-
+/*
 @media all and (min-width: 500px) {
   .chat {
     height: calc(100vh - 140px);
