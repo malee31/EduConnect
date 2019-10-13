@@ -20,7 +20,8 @@ body{
 }
 
 #content{
-	width: 100vw;
+	background-color: white;
+	width: calc(50vw - 25px);
 	height: auto;
 	margin: 20px 25px;
 	padding: 0px;	
@@ -28,7 +29,7 @@ body{
 
 #defaultview{
 	width: 100vw;
-	height 90vh;
+	height: 90vh;
 }
 footer {
 	position: fixed;
