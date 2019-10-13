@@ -16,15 +16,15 @@
         </input>
       </div>
       <div id="corner">
-         <p id="name">
-            Name
-         </p>
-         
-         <button id ="link" onclick="visitPage();">Back</button>
-         
+        <p id="name">
+          Name
+        </p> 
+        <button id ="link" onclick="visitPage();">
+          Back
+        </button>
       </div>
-   </header>
-   <div id="content">
+    </header>
+    <div id="content">
       <div id="sidebar">
         <!--Sidebar-->
       <p id="teacher">Teachers: Lingfeng Ren</p>
@@ -44,22 +44,21 @@
           <button class="input" id="sent">Send</button>
         </form>
       </div>
-      </div>
     </div>
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://unpkg.com/cookie_js@1.2.2/cookie.min.js"></script>
-<script src="https://unpkg.com/socket.io-client@2/dist/socket.io.slim.js"></script>
-<script src="javascript.js"></script>
-    <!-- Include jquery, cookies, socket.io (client-side) and your own code -->
-<script type="text/javascript">
-          function visitPage(){
-              cookie.remove("user");
-              window.location='../index.html';
-          }
-</script>
-<script type="text/javascript">
-          document.getElementById("name").innerHTML = "Signed in as  " + cookie.get('user');
-</script>
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://unpkg.com/cookie_js@1.2.2/cookie.min.js"></script>
+    <script src="https://unpkg.com/socket.io-client@2/dist/socket.io.slim.js"></script>
+    <script src="javascript.js"></script>
+      <!-- Include jquery, cookies, socket.io (client-side) and your own code -->
+    <script type="text/javascript">
+      function visitPage(){
+          cookie.remove("user");
+          window.location='../index.html';
+      }
+    </script>
+    <script type="text/javascript">
+      document.getElementById("name").innerHTML = "Signed in as  " + cookie.get('user');
+    </script>
   </body>
 </html>

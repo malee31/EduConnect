@@ -6,41 +6,40 @@
 	</head>
 
 	<body>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.12.0/bootstrap-social.min.css">
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<script src="https://cdn.rawgit.com/oauth-io/oauth-js/c5af4519/dist/oauth.js"></script>
-<script src="https://unpkg.com/cookie_js@1.2.2/cookie.min.js"></script>
-<a id="google-button" class="btn btn-block btn-social btn-google">
-  <i class="fa fa-google"></i> Sign in with Google
-</a>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script>
-	var user = cookie.get('user');
-
-	$('#google-button').on('click', function() {
-	// Initialize with your OAuth.io app public key
-	OAuth.initialize('vNZl9yAtVFT7j3XYV0art8LutKQ');
-  // Use popup for oauth
-  // Alternative is redirect
-  	OAuth.popup('google').then(google => {
-	    console.log(google);
-	    google.me().done(function(data) {
-	    	console.log(data.raw.names[0].displayName);
-	    	if (!user) {
-    			cookie.set('user', data.raw.names[0].displayName, {path: '/' });
-  			}
-	    	cookie.set('user', data.raw.names[0].displayName, {path: '/' });
-		})
-	});
-})</script>
-</div>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.12.0/bootstrap-social.min.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="./styles.css"></link>
-		<a href="chatroom/chatroom.html">Go to classroom</a>
+		<a id="google-button" class="btn btn-block btn-social btn-google">
+		  <i class="fa fa-google"></i> Sign in with Google
+		</a>
+		</div>
+		<a href="chatroom/chatroom.html">Classroom</a>
 		
 		<footer>
 			<h4>Made during Hyphen-Hacks 2019</h4>
-			
 		</footer>
+		<script src="https://cdn.rawgit.com/oauth-io/oauth-js/c5af4519/dist/oauth.js"></script>
+		<script src="https://unpkg.com/cookie_js@1.2.2/cookie.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script>
+			var user = cookie.get('user');
+			$('#google-button').on('click', function() {
+				// Initialize with your OAuth.io app public key
+					OAuth.initialize('vNZl9yAtVFT7j3XYV0art8LutKQ');
+					// Use popup for oauth
+					// Alternative is redirect
+				  	OAuth.popup('google').then(google => {
+					    console.log(google);
+					    google.me().done(function(data) {
+					    	console.log(data.raw.names[0].displayName);
+					    	if (!user) {
+				    			cookie.set('user', data.raw.names[0].displayName, {path: '/' });
+				  			}
+					    	cookie.set('user', data.raw.names[0].displayName, {path: '/' });
+						})
+					});
+				})
+		</script>
 	</body>
 </html>
