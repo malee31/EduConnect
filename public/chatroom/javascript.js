@@ -1,7 +1,6 @@
 var container=document.getElementsByClassName("chat")[0];
 // Get the current username from the cookies
 var user = cookie.get('/user');
-user.path = "/";
 if (!user) {
   // Ask for the username if there is none set already
   user = prompt('Choose a username:');
@@ -10,7 +9,7 @@ if (!user) {
     user="Default";
   } else {
     // Store it in the cookies for future use
-    cookie.set('user', user);
+    Cookies.set('user', user, {path: '/' });
   }
 }
 
