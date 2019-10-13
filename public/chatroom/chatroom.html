@@ -1,9 +1,5 @@
 <!-- ./public/index.html -->
 <!DOCTYPE html>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://unpkg.com/cookie_js@1.2.2/cookie.min.js"></script>
-<script src="https://unpkg.com/socket.io-client@2/dist/socket.io.slim.js"></script>
-<script src="javascript.js"></script>
 <html>
   <head>
     <title>EduConnect|Chatroom</title>
@@ -15,9 +11,9 @@
     <header>
       <h1>EduConnect</h1>
       <div id="anon">
-        <label for="anonymous">Post as anonymous</label>
-         <input type="checkbox" id="anonymous">
-         </input>
+        <label for="anonymous" id="anontxt">Post as anonymous</label>
+        <input type="checkbox" id="anonymous">
+        </input>
       </div>
       <div id="corner">
          <p id="name">
@@ -60,6 +56,9 @@
 
 
     <!-- Include jquery, cookies, socket.io (client-side) and your own code -->
-    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://unpkg.com/cookie_js@1.2.2/cookie.min.js"></script>
+  <script src="https://unpkg.com/socket.io-client@2/dist/socket.io.slim.js"></script>
+  <script src="javascript.js"></script>
   </body>
 </html>
