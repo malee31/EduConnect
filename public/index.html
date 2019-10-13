@@ -20,11 +20,11 @@
   // Use popup for oauth
   // Alternative is redirect
   	OAuth.popup('google').then(google => {
-    console.log(google);
-    google.me().done(function(data) {
-    console.log(data.profile);
-
-})
+	    console.log(google);
+	    google.me().done(function(data) {
+	    	console.log(data);
+	    	console.log(data.name);
+		})
 	});
 })</script>
 </div>
