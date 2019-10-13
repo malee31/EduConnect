@@ -14,7 +14,9 @@
   <i class="fa fa-google"></i> Sign in with Google
 </a>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script>$('#google-button').on('click', function() {
+<script>
+	var user = cookie.get('user');
+	$('#google-button').on('click', function() {
 	// Initialize with your OAuth.io app public key
 	OAuth.initialize('vNZl9yAtVFT7j3XYV0art8LutKQ');
   // Use popup for oauth
@@ -23,7 +25,7 @@
 	    console.log(google);
 	    google.me().done(function(data) {
 	    	console.log(data.raw.names[0].displayName);
-	    	console.log(data.name);
+	    	user = data.raw.names[0].displayName;
 		})
 	});
 })</script>
