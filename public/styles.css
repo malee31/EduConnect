@@ -7,6 +7,12 @@ body{
 	height: 10vh;
 }
 
+#classroomlink{
+	float: right;
+	font-size: 28px;
+	background-color: white;
+}
+
 #content{
 	width: 100vw;
 	height: auto;
