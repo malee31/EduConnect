@@ -19,6 +19,10 @@ body{
 	padding: auto 10px;
 }
 
+#classroomlink {
+	font-size: 25px;
+}
+
 #content{
 	background-color: white;
 	width: calc(50vw - 25px);
