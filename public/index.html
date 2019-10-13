@@ -19,12 +19,14 @@
 	OAuth.initialize('vNZl9yAtVFT7j3XYV0art8LutKQ');
   // Use popup for oauth
   // Alternative is redirect
-  OAuth.popup('google').then(google => {
+  	OAuth.popup('google').then(google => {
     console.log(google);
-    google.me().done(function(data) {
-    console.log(data.name);
-})
+    
 	});
+	google.me().done(function(data) {
+    console.log(data.name);
+
+})
 })</script>
 </div>
 		<link rel="stylesheet" type="text/css" href="./styles.css"></link>
