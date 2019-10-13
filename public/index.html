@@ -15,15 +15,17 @@
 </a>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script>$('#google-button').on('click', function() {
-	OAuth.initialize('vNZl9yAtVFT7j3XYV0art8LutKQ')
-	OAuth.popup('google').done(function(result) {
-    console.log(result)
+	// Initialize with your OAuth.io app public key
+	OAuth.initialize('vNZl9yAtVFT7j3XYV0art8LutKQ');
+  // Use popup for oauth
+  // Alternative is redirect
+  OAuth.popup('google').then(google => {
+    console.log(google);
     result.me().done(function(data) {
     console.log(data.name);
-	})
-    // do some stuff with result
-	})
-</script>
+})
+	});
+})</script>
 </div>
 		<link rel="stylesheet" type="text/css" href="./styles.css"></link>
 		<a href="chatroom/chatroom.html">Go to classroom</a>
