@@ -22,7 +22,7 @@
   OAuth.popup('google').then(google => {
     console.log(google);
     // Retrieves user data from oauth provider
-    console.log(google.me());
+    console.log('Logged in as: ' + google.getBasicProfile().getName());
 	});
 })</script>
 </div>
