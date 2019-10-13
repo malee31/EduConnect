@@ -21,12 +21,11 @@
   // Alternative is redirect
   	OAuth.popup('google').then(google => {
     console.log(google);
-    
-	});
-	google.me().done(function(data) {
+    google.me().done(function(data) {
     console.log(data.name);
 
 })
+	});
 })</script>
 </div>
 		<link rel="stylesheet" type="text/css" href="./styles.css"></link>
