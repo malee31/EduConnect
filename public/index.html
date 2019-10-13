@@ -17,31 +17,14 @@
 			<p>EduConnect Classrooms</p>
 			<a id="classroomlink" href="chatroom/chatroom.html">Classroom</a>
 		</div>
-		
 		<footer>
-			<h4>Made during Hyphen-Hacks 2019</h4>
+			<h4>
+				Made during Hyphen-Hacks 2019
+			</h4>
 		</footer>
 		<script src="https://cdn.rawgit.com/oauth-io/oauth-js/c5af4519/dist/oauth.js"></script>
 		<script src="https://unpkg.com/cookie_js@1.2.2/cookie.min.js"></script>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-		<script>
-			var user = cookie.get('user');
-			$('#google-button').on('click', function() {
-				// Initialize with your OAuth.io app public key
-					OAuth.initialize('vNZl9yAtVFT7j3XYV0art8LutKQ');
-					// Use popup for oauth
-					// Alternative is redirect
-				  	OAuth.popup('google').then(google => {
-					    console.log(google);
-					    google.me().done(function(data) {
-					    	console.log(data.raw.names[0].displayName);
-					    	if (!user) {
-				    			cookie.set('user', data.raw.names[0].displayName, {path: '/' });
-				  			}
-					    	cookie.set('user', data.raw.names[0].displayName, {path: '/' });
-						})
-					});
-				})
-		</script>
+		<script src="./scripts.js"></script>
 	</body>
 </html>
