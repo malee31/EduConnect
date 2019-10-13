@@ -1,6 +1,7 @@
 body{
 	background-image: url("http://www.mmc.edu/education/som/academicdepartments/basicsciences/profmedicaleducation/profess-med-photos.jpg");
 	background-size: cover;
+	color: black;
 }
 
 #navbar{
@@ -11,12 +12,13 @@ body{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 100vw;
+	width: 100%;
 	height: auto;
 	font-size: 28px;
 	background-color: white;
 	vertical-align: middle;
 	padding: auto 10px;
+	overflow: hidden;
 }
 
 #classroomlink {
@@ -24,7 +26,6 @@ body{
 }
 
 #content{
-	background-color: white;
 	width: calc(50vw - 25px);
 	height: auto;
 	margin: 20px 25px;
@@ -32,10 +33,14 @@ body{
 	font-size: 20px;
 }
 
-#defaultview{
-	width: 100vw;
-	height: 90vh;
+.paragraph{
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 5px;
+	width: calc(50vw - 25px);
+	height: auto;
+	padding: 0;
 }
+
 footer {
 	position: fixed;
 	bottom: 0;
