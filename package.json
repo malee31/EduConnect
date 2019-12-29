@@ -1,0 +1,23 @@
+{
+  "name": "EduConnect",
+  "version": "1.0.0",
+  "description": "Welcome to the Github repository for EduConnect created for Hyphen-Hacks 2019.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malee31/educonnect.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/malee31/educonnect/issues"
+  },
+  "homepage": "https://github.com/malee31/educonnect#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "server": "^1.0.21"
+  }
+}
