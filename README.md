@@ -15,6 +15,4 @@ Both teachers and students sign in with their Google account. Then they have acc
 There is a check box at the top of the chat room that toggles anonymity. Students may check it at any time then post a message to post as "Anonymous".
 
 <hr></hr>
-# The site doesn't work!
-In case the site no longer works, the site can be run locally on localhost:3000 by cloning this repository and running <code>npm install</code> followed by <code>node index.js</code>.
-(Requires NodeJS)
+In case the site no longer works, the site can be run locally on localhost:3000 by cloning this repository and running <code>npm install</code> followed by <code>node index.js</code>. (Requires NodeJS)
