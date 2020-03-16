@@ -19,6 +19,7 @@
   "dependencies": {
     "acorn": ">=5.7.4",
     "express": "^4.17.1",
+    "minimist": ">=1.2.2",
     "server": "^1.0.21"
   }
 }
