@@ -18,3 +18,6 @@ There is a check box at the top of the chat room that toggles anonymity. Student
 In case the site no longer works, the site can be run locally on localhost:3000 by cloning this repository and running <code>npm install</code> followed by <code>node index.js</code>. (Requires NodeJS)
 
 I lost the educonnect.ddns.net domain name because I forgot to renew it :/
+
+Now deployed to Heroku.
+To demo without logging into Google, press Classroom then check the "Post as anonymous" checkbox.
