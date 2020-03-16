@@ -1,5 +1,3 @@
-// /index.js
-
 const server = require('server');
 const { get, socket } = server.router;
 const { render } = server.reply;

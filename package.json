@@ -4,6 +4,7 @@
   "description": "Welcome to the Github repository for EduConnect created for Hyphen-Hacks 2019.",
   "main": "index.js",
   "scripts": {
+	 "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
