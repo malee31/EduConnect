@@ -19,7 +19,7 @@
   "homepage": "https://github.com/malee31/educonnect#readme",
   "dependencies": {
     "acorn": ">=5.7.4",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "minimist": ">=1.2.6",
     "server": "^1.0.21"
   }
