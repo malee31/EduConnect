@@ -4,7 +4,7 @@ const { render } = server.reply;
 
 // Update everyone with the current user count
 const updateCounter = ctx => {
-  ctx.io.emit('count', Object.keys(ctx.io.sockets.sockets).length);
+  ctx.io.emit('count', ctx.io.engine.clientsCount);
 };
 
 // Send the new message to everyone
@@ -15,7 +15,7 @@ const sendMessage = ctx => {
 server({
     socket: {
       cors: {
-        origin: "http://localhost",
+        origin: "*",
         methods: ["GET", "POST"],
         credentials: true,
         transports: ['websocket', 'polling'],
