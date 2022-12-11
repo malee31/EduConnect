@@ -12,7 +12,17 @@ const sendMessage = ctx => {
   ctx.io.emit('message', ctx.data);
 };
 
-server([
+server({
+    socket: {
+      cors: {
+        origin: "http://localhost",
+        methods: ["GET", "POST"],
+        credentials: true,
+        transports: ['websocket', 'polling'],
+      },
+      allowEIO3: true
+    }
+  }, [
   get('/', ctx => render('index.html')),
   socket('connect', updateCounter),
   socket('disconnect', updateCounter),

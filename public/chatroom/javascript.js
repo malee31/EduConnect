@@ -1,6 +1,6 @@
 var container=document.getElementsByClassName("chat")[0];
 // Get the current username from the cookies
-var user = cookie.get('user');
+var user = cookie.get('user') || "Anonymous";
 if (!user) {
   // Ask for the username if there is none set already
     alert('Please login with Google');
